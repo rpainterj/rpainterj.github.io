@@ -1,0 +1,56 @@
+// --------------------------//
+// base.scss
+// Sitewide Styles
+//---------------------------//
+
+body * {
+    font-family: $franklin;
+}
+
+.text--alpha {
+    color: $reader;
+    font-size: 2em;
+    line-height: 1.6;
+}
+
+.text--beta {
+    color: $reader;
+    font-size: 1.5em;
+    line-height: 1.6;
+
+    @include sm {
+        font-size: 1.7em;
+    }
+}
+
+.link--alpha {
+    display: inline-block;
+    text-decoration: underline;
+
+    &:hover, &:focus {
+        @include transition(.1s);
+        transform: scale(1.07);
+    }
+}
+
+.bio {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 650px;
+
+    @include sm {
+        display: block;
+    }
+
+    &--img {
+        height: 300px;
+        width: 300px;
+        margin: 0 auto;
+        order: 1;
+
+        @include sm {
+            margin: 0 20px 20px 0;
+            float: left;
+        }
+    }
+}

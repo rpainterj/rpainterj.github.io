@@ -1,0 +1,126 @@
+// --------------------------//
+// structure.scss
+// Predefined structure utilities
+//---------------------------//
+
+.u-side-scroll {
+	overflow-x: scroll;
+	
+	&::-webkit-scrollbar {
+		display: none;
+	}
+}
+
+.u-divider {
+	background: #dadada;
+	margin: 20px 0;
+	height: 1px;
+	width: 100%;
+}
+
+//Margin utilities
+.u-mar-0 {
+	margin: 0;
+}
+
+.u-mar-bottom-neg-10 {
+	margin-bottom: -10px;
+}
+
+.u-mar-bottom-neg-5 {
+	margin-bottom: -5px;
+}
+
+.u-mar-bottom-0 {
+	margin-bottom: 0;
+}
+
+.u-mar-bottom-5 {
+	margin-bottom: 5px;
+}
+
+.u-mar-bottom-10 {
+	margin-bottom: 10px;
+}
+
+.u-mar-bottom-15 {
+	margin-bottom: 15px;
+}
+
+.u-mar-bottom-20 {
+	margin-bottom: 20px;
+}
+
+.u-mar-bottom-30 {
+	margin-bottom: 30px;
+}
+
+.u-mar-bottom-50 {
+	margin-bottom: 50px;
+}
+
+
+
+.u-mar-top-neg-10 {
+	margin-top: -10px;
+}
+
+.u-mar-top-neg-5 {
+	margin-top: -5px;
+}
+
+.u-mar-top-0 {
+	margin-top: 0;
+}
+
+.u-mar-top-5 {
+	margin-top: 5px;
+}
+
+.u-mar-top-10 {
+	margin-top: 10px;
+}
+
+.u-mar-top-15 {
+	margin-top: 15px;
+}
+
+.u-mar-top-20 {
+	margin-top: 20px;
+}
+
+.u-mar-top-30 {
+	margin-top: 30px;
+}
+
+.u-mar-top-50 {
+	margin-top: 50px;
+}
+
+.u-img {
+	display: block;
+	width: 100%;
+}
+
+// Direction utilities
+
+.u-center {
+	display: block; 
+	margin: 0 auto;
+}
+
+.u-float-right {
+	float: right;
+}
+
+.u-justify-self-end {
+	justify-self: end;
+}
+
+.u-float-left {
+	float: left;
+}
+
+.u-justify-self-start {
+	justify-self: start;
+}

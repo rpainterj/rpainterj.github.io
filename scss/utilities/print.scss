@@ -1,0 +1,34 @@
+// --------------------------//
+// print.scss
+// Print Stylesheet for Refactored pages
+//---------------------------//
+
+@media print {
+
+	@page {
+		margin: 0.5in;
+	}
+
+	body {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		font-size: 20px;
+
+		.wrapper.mod-premium {
+			padding: 0;
+		}
+	} //body
+
+	// Anything that no one will ever want to see printed. !important because 
+	// otherwise we have to fight against varying levels of specificity. Anything page
+	// specific you can add the u-hide-print class to the element
+	header, footer, .nav-premium, .premium-hero, .premium-filter--right {
+		display: none !important;
+	}
+
+	.u-hide-print {
+		display: none;
+	}
+} //@media print
+

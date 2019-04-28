@@ -1,0 +1,28 @@
+// --------------------------//
+// clearfix.scss
+// Clearfix for containers
+//---------------------------//
+
+.u-clearfix {
+	&:after {
+		clear: both;
+		content: " ";
+		display: block;
+	}	
+} //.u-clearfix
+
+.u-clear-left {
+	clear: left;
+}
+
+.u-float-none {
+	float: none;
+}
+
+.u-float-left {
+	float: left;
+}
+
+.u-float-right {
+	float: right;
+}

@@ -1,0 +1,25 @@
+// --------------------------//
+// showhide.scss
+// Show/hide utils
+//---------------------------//
+
+// Show/Hide - These utility is pretty much the only instance where !important should ever be used
+// General hide
+.u-hide {
+	display: none !important;
+}
+
+// Hide on mobile only
+.u-hide-mobile {
+	@include xs {
+		display: none !important;
+	}
+} //.u-hide-mobile
+
+// Show on mobile only
+.u-show-mobile {
+	@include sm {
+		display: none !important;
+	}
+}
+

@@ -1,0 +1,18 @@
+// --------------------------//
+// page.scss
+// Page Setup
+//---------------------------//
+
+.page {
+    padding: 0 20px;
+    margin: 100px auto;
+    max-width: 1190px;
+
+    &--section {
+        margin: 100px auto;
+        
+        @include sm {
+            margin: 200px auto;
+        }
+    }
+}

@@ -1,0 +1,81 @@
+// --------------------------//
+// link.scss
+// Link Mixins
+//---------------------------//
+
+%m-link-gray {
+	color: $mountain-mist;
+
+	&:hover {
+		color: darken($mountain-mist, 5%);
+		text-decoration: underline;
+	}
+}
+
+%m-link-white {
+	color: $white;
+	text-decoration: underline;
+
+	&:hover {
+		color: $white;
+	}
+}
+
+%m-link-blue {
+	color: $picton-blue;
+	text-decoration: underline;
+
+	&:hover {
+		color: $pelorous;
+	}
+}
+
+%m-link-black {
+	color: $shark;
+
+	&:hover {
+		color: $shark;
+		text-decoration: underline;
+	}
+}
+
+%m-link-inherit {
+	color: inherit;
+
+	&:hover {
+		color: inherit;
+	}
+}
+
+%m-link-blue-hover {
+
+	&:hover {
+		color: $picton-blue;
+		text-decoration: underline;
+	}
+}
+
+%m-link-gray-hover {
+
+	&:hover {
+		color: $mountain-mist;
+		text-decoration: underline;
+	}
+}
+
+%m-link-black-hover {
+
+	&:hover {
+		color: $shark;
+		text-decoration: underline;
+	}
+}
+
+%m-link-oxbow {
+	color: $mountain-mist;
+	text-decoration: none;
+
+	&:hover {
+		color: $white;
+	}
+}

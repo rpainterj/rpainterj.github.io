@@ -1,0 +1,13 @@
+// --------------------------//
+// clearfix.scss
+// Fix for floated children
+//---------------------------//
+
+// clearfix
+%m-clearfix {
+	&:after {
+		clear: both;
+		content: " ";
+		display: block;
+	}
+} //%m-clearfix

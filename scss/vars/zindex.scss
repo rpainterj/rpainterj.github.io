@@ -1,0 +1,12 @@
+// --------------------------//
+// zindex.scss
+// z-index management for layouts
+//---------------------------//
+
+// This index will automatically set the z pos of element -- Elements can be added and sass will adjust accordingly.
+$z: base, main-nav, tool-tip, list, main-nav-overlay, nav-popup, modal-bg, modal;
+
+// Usage:
+// .element {
+//    z-index: index($z, modal);
+// }

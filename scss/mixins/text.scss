@@ -1,0 +1,446 @@
+// --------------------------//
+// text.scss
+// Text mixins
+//---------------------------//
+
+//====================//
+//   Text Inventory   //
+//====================//
+
+%m-text-congo {
+	font-family: $helvetica;
+	font-size: $text-xxs;
+	font-weight: 600;
+}
+
+%m-text-indus {
+	font-family: $helvetica;
+	font-size: 11px;
+	font-weight: 600;
+}
+
+%m-text-susquehanna {
+	font-family: $helvetica;
+	font-size: $text-stream;
+	font-weight: 300;
+}
+
+%m-text-pedernales {
+	font-family: $helvetica;
+	font-size: $text-stream;
+	font-weight: 600;
+}
+
+%m-text-nolan {
+	font-family: $helvetica;
+	font-size: $text-xs;
+	font-weight: 400;
+}
+
+%m-text-sheyenne {
+	font-family: $helvetica;
+	font-size: $text-xs;
+	font-weight: 500;
+}
+
+%m-text-body-xs {
+	font-family: $helvetica;
+	font-size: $text-xs; // 13px
+	font-weight: 600;
+}
+
+%m-text-wichita {
+	font-family: $helvetica;
+	font-weight: 700;
+	font-size: $text-xs;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+}
+
+%m-text-table-info {
+	font-family: $helvetica;
+	font-size: $text-sm; // 14px
+}
+
+%m-text-body-sm {
+	font-family: $helvetica;
+	font-size: $text-md; // 15px
+}
+
+%m-text-guadalupe {
+	font-family: $helvetica;
+	font-size: $text-md; // 15px
+	font-weight: 500;
+}
+
+%m-text-hudson {
+	font-family: $helvetica;
+	font-size: $text-md;
+	font-weight: 600;
+}
+
+%m-text-body {
+	font-family: $helvetica;
+	font-size: $text-md; // 15px
+	line-height: 1.6;
+}
+
+%m-text-nueces {
+	font-family: $helvetica;
+	font-size: $text-xl; // 18px
+	font-weight: 400;
+}
+
+%m-text-danube {
+	font-family: $freightsans;
+	font-weight: 300;
+}
+
+%m-text-rhine {
+	font-family: $freightsans;
+	font-size: $text-xxs;
+	font-weight: 700;
+	letter-spacing: .05em;
+	text-transform: uppercase;
+}
+
+%m-text-cimarron {
+	font-family: $freightsans;
+	font-size: $text-xxs;
+	font-weight: 500;
+
+	@include sm {
+		font-size: $text-lg;
+	}
+
+	@include md {
+		font-size: $text-xl;
+	}	
+}
+
+// Legacy: don't convert to ems without changing <small> to a <span> in the player panel markup
+%m-text-wilda {
+	font-family: $freightsans;
+	font-size: $text-xxs;
+	font-weight: 700;
+	letter-spacing: .05em;
+	text-transform: uppercase;
+}
+
+%m-text-oder {
+	font-family: $freightsans;
+	font-size: 11px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+%m-text-san-jacinto {
+	font-family: $freightsans;
+	font-size: $text-drop;
+	font-weight: 700;
+	letter-spacing: .5px;
+	text-transform: uppercase;
+}
+
+%m-text-sabine {
+	font-family: $freightsans;
+	font-size: $text-xs;
+	font-weight: 500;
+}
+
+%m-text-trinity {
+	font-family: $freightsans;
+	font-size: $text-xs;
+	font-weight: 600;
+}
+
+%m-text-wabash {
+	font-family: $freightsans;
+	font-size: $text-xs;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+%m-text-elbe {
+	font-family: $freightsans;
+	font-size: $text-sm;
+	font-weight: 500;
+}
+
+%m-text-arno {
+	font-family: $freightsans;
+	font-size: $text-sm;
+	font-weight: 600;
+}
+
+%m-text-st-lawrence {
+	font-family: $freightsans;
+	font-size: $text-md;
+	font-weight: 400;
+}
+
+%m-text-colorado {
+	font-family: $freightsans;
+	font-size: $text-md;
+	font-weight: 500;
+}
+
+%m-text-tiber {
+	font-family: $freightsans;
+	font-size: $text-md;
+	font-weight: 500;
+
+	@include sm {
+		font-size: $text-xl;
+	}
+}
+
+// for section titles
+%m-text-ohio {
+	font-family: $freightsans;
+	font-size: $text-md;
+	font-weight: 700;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+}
+
+%m-text-tigris {
+	font-family: $freightsans;
+	font-size: $text-lg;
+	font-weight: 500;
+}
+
+%m-text-potomac {
+	font-family: $freightsans;
+	font-size: $text-lg;
+	font-weight: 600;
+}
+
+// for remodal titles
+%m-text-po {
+	font-family: $freightsans;
+	font-size: $text-lg;
+	font-weight: 500;
+
+	@include sm {
+		font-size: $text-xl;
+	}
+}
+
+%m-text-comal {
+	font-family: $freightsans;
+	font-size: $text-lg;
+	font-weight: 600;
+
+	@include bp-custom(414px) {
+		font-size: $text-sm;
+	}
+
+	@include lg {
+		font-size: $text-lg;
+	}	
+}
+
+%m-text-nile {
+	font-family: $freightsans;
+	font-size: $text-lake;
+	font-weight: 500;
+}
+
+%m-text-thames {
+	font-family: $freightsans;
+	font-size: $text-xl;
+	font-weight: 500;
+}
+
+%m-text-jordan {
+	font-family: $freightsans;
+	font-size: $text-xl;
+	font-weight: 500;
+
+	@include md {
+		font-size: $text-xxl;
+	}	
+}
+
+%m-text-loire {
+	font-family: $freightsans;
+	font-size: $text-xl;
+	font-weight: 600;
+}
+
+%m-text-lavaca {
+	font-family: $freightsans;
+	font-size: $text-ocean;
+	font-weight: 300;
+	line-height: 75px;
+
+	@include sm {
+		font-size: $text-xxxl;
+	}	
+}
+
+%m-text-waller {
+	font-family: $freightsans;
+	font-size: $text-ocean;
+	font-weight: 400;
+	line-height: 2em;
+}
+
+%m-text-gila {
+	font-family: $freightsans;
+	font-size: $text-ocean;
+	font-weight: 500;
+}
+
+%m-text-header {
+	font-family: $freightsans;
+	font-size: $text-ocean;
+	font-weight: 500;
+
+	@include sm {
+		font-size: $text-xxl; // 24px
+	}
+}
+
+%m-text-pecos {
+	font-family: $freightsans;
+	font-size: $text-ocean;
+	font-weight: 600;
+}
+
+%m-text-amazon {
+	font-family: $freightsans;
+	font-size: $text-whirlpool;
+	font-weight: 500;
+}
+
+%m-text-san-gabriel {
+	font-family: $freightsans;
+	font-size: $text-xxl;
+	font-weight: 400;
+}
+
+%m-text-ganges {
+	font-family: $freightsans;
+	font-size: $text-xxl;
+	font-weight: 500;
+}
+
+%m-text-rhone {
+	font-family: $freightsans;
+	font-size: $text-bay;
+	font-weight: 500;
+}
+
+%m-text-canadian {
+	font-family: $freightsans;
+	font-size: $text-eddy;
+	font-weight: 600;
+}
+
+%m-text-columbia {
+	font-family: $freightsans;
+	font-size: $text-xxxl;
+	font-weight: 300;
+}
+
+%m-text-eden {
+	font-family: $freightsans;
+	font-size: $text-xxxl;
+	font-weight: 400;
+}
+
+%m-text-james {
+	font-family: $freightsans;
+	font-size: $text-xxxl;
+	font-weight: 300;
+
+	@include sm {
+		font-size: $text-pool;
+	}
+}
+
+%m-text-concho {
+	font-family: $freightsans;
+	font-size: $text-xxxl;
+	font-weight: 500;
+}
+
+%m-text-brazos {
+	font-family: $freightsans;
+	font-size: $text-xxxl;
+	font-weight: 600;
+
+	@include sm {
+		font-size: $text-ripple;
+		font-weight: 400;
+	}
+}
+
+%m-text-mekong {
+	font-family: $freightsans;
+	font-size: $text-xxxl;
+	font-weight: 300;
+
+	@include sm {
+		font-size: $text-hero;
+	}
+}
+
+%m-text-pease {
+	font-family: $freightsans;
+	font-size: $text-glacier;
+	font-weight: 400;
+	line-height: 48px;
+
+	@include sm {
+		font-size: $text-hero;
+	}
+}
+
+%m-text-paluxy {
+	font-family: $freightsans;
+	font-size: $text-glacier;
+	font-weight: 400;
+
+	@include sm {
+		font-size: $text-hero;
+	}
+}
+
+%m-text-yukon {
+	font-family: $freightsans;
+	font-size: $text-ripple;
+	font-weight: 300;
+}
+
+%m-text-blanco {
+	font-family: $freightsans;
+	font-size: $text-ripple;
+	font-weight: 400;
+}
+
+%m-text-windy {
+	font-family: $freightsans;
+	font-size: $text-sea;
+	font-weight: 500;
+}
+
+%m-text-volga {
+	font-family: $freightsans;
+	font-size: $text-hero;
+	font-weight: 300;
+}
+
+%m-text-rio-grande {
+	font-family: $freightsans;
+	font-size: $text-hero;
+	font-weight: 300;
+	line-height: 48px;
+
+	@include sm {
+		font-size: $text-wave;
+		line-height: 64px;
+	}
+}

@@ -1,0 +1,152 @@
+// --------------------------//
+// text.scss
+// Text utilities
+//---------------------------//
+
+// Position
+.u-text-center {
+	text-align: center;
+}
+
+.u-text-right {
+	text-align: right;
+}
+
+.u-text-left {
+	text-align: left;
+}
+
+
+// Font weight
+.u-text-bold, .u-bold {
+	font-weight: 600;
+}
+
+.u-text-underline {
+	text-decoration: underline;
+}
+
+// Font family
+.u-font-helvetica {
+	font-family: $helvetica;
+}
+
+.u-font-freight-sans {
+	font-family: $freightsans;
+	font-weight: 500;
+}
+
+
+// Font weight
+.u-text-bold, .u-bold {
+	font-weight: 600;
+}
+
+.u-text-extra-bold {
+	font-weight: 900;
+}
+
+.u-text-underline {
+	text-decoration: underline;
+}
+
+// Font sizes
+.u-font-xxs {
+	font-size: $text-xxs;
+}
+
+.u-font-xs {
+	font-size: $text-xs;
+}
+
+.u-font-sm {
+	font-size: $text-sm;
+}
+
+.u-font-md {
+	font-size: $text-md;
+}
+
+.u-font-lg {
+	font-size: $text-lg;
+}
+
+.u-font-xl {
+	font-size: $text-xl;
+}
+
+.u-font-xxl {
+	font-size: $text-xxl;
+}
+
+.u-font-xxxl {
+	font-size: $text-xxxl;
+}
+
+
+.u-spacer-2 {
+	margin-right: 2px;
+	margin-left: 2px;
+}
+
+.u-spacer-5 {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.u-spacer-2r {
+	margin-right: 2px;
+}
+
+.u-spacer-5r {
+	margin-right: 5px;
+}
+
+.u-space-10r {
+	margin-right: 10px;
+}
+
+.u-text-strike {
+	opacity: .5;
+	text-decoration: line-through;
+}
+
+$text-xxs: 0.667em; // 10px
+$text-xs: 0.867em; // 13px
+$text-sm: 0.933em; // 14px
+$text-md: 1em; // 15px
+$text-lg: 1.067em; // 16px
+$text-xl: 1.200em; // 18px
+$text-xxl: 1.600em; // 24px
+$text-xxxl: 2em; // 30px
+
+// text input in the cms (no control over classes)
+.u-cms-text {
+	h1, h2 {
+		color: $shark;
+	}
+
+	a {
+		color: $picton-blue;
+		text-decoration: underline;
+	}
+
+	&.mod-reader {
+		p {
+			color: $reader;
+		}
+	}
+}
+
+// For sections where we want to improve readibility
+.reader-section {
+	color: $reader;
+
+	p {
+		color: $reader;
+	}
+}
+
+.u-text-header {
+	@extend %m-text-header;
+}

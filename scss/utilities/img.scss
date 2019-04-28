@@ -1,0 +1,19 @@
+// --------------------------//
+// img.scss
+// Image utilities
+//---------------------------//
+.u-fit-img {
+	max-width: 100%;
+}
+
+.u-sm-border-radius {
+	border-radius: 7px;
+}
+
+.u-full-height-img {
+	@extend %m-full-height-img;
+}
+
+.u-full-width-img {
+	@extend %m-full-width-img;
+}

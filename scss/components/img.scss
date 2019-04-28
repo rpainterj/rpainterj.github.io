@@ -1,0 +1,13 @@
+// --------------------------//
+// img.scss
+// Images
+//---------------------------//
+
+.img {
+    &--md {
+        display: block;
+        margin: 0 auto;
+        width: 800px;
+        max-width: 100%;
+    }
+}

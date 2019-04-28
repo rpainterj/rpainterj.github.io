@@ -1,0 +1,21 @@
+// --------------------------//
+// state.scss
+// State utils
+//---------------------------//
+
+//Disabled objects
+.u-is-disabled {
+	opacity: 0.6;
+	pointer-events: none;
+	user-select: none;
+	-ms-user-select: none;
+	-webkit-user-select: none;
+
+}
+
+.u-is-clickable {
+	cursor: pointer;
+	pointer-events: auto;
+}
+
+

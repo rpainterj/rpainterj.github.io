@@ -1,0 +1,33 @@
+// --------------------------//
+// transitions.scss
+// CSS3 transitions
+//---------------------------//
+
+// General CSS3 transition mixin
+@mixin transition($time) {
+  transition: all $time ease-in-out;
+}
+
+// General CSS3 transition - with delay
+@mixin transition-with-delay($time,$delay) {
+  transition: all $time ease-in-out $delay;
+}
+
+// Specific property transition
+@mixin property-transition ($type,$time) {
+    transition: $type $time ease-in-out;
+}
+
+// Specific property transition - with delay
+@mixin property-transition-with-delay ($type,$time,$delay) {
+    transition: $type $time ease-in-out $delay;
+}
+
+// Transition for lists
+@mixin transition-list-delay {
+	@for $i from 1 through 25 {
+		&:nth-child(#{$i}) {
+			transition-delay: #{$i * .08}s;
+		}
+	}
+}

@@ -1,0 +1,54 @@
+// --------------------------//
+// header.scss
+// Header
+//---------------------------//
+
+.header {
+    padding: 10px;
+
+    &--logo {
+        align-items: center;
+        border-bottom: 3px solid $concrete;
+        display: flex;
+        padding-bottom: 7px;
+
+        &--img {
+            background: url("../images/final_logo-03.svg") center no-repeat;
+            display: block;
+            height: 50px;
+            width: 50px;
+
+            &:hover, &:focus {
+                @include transition(0.2s);
+                background: url("../images/final_logo-04.svg") center no-repeat;
+            }
+        }
+
+        &--title {
+            color: $reader;
+            font-size: 20px;
+            font-weight: 600;
+            padding-left: 20px;
+        }
+    }
+
+    &--nav {
+
+        &--link {
+            color: $reader;
+            display: inline-block;
+            font-size: 15px;
+            padding: 5px;
+
+            &:hover:not(.is-active), &:focus:not(.is-active) {
+                @include transition(0.1s);
+                transform: scale(1.1);
+            }
+
+            &.is-active {
+                border-top: 3px solid #5c7d99;
+                pointer-events: none;
+            }
+        }
+    }
+}

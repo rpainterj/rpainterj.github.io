@@ -1,0 +1,47 @@
+// --------------------------//
+// icon.scss
+// Baseline icon styles
+//---------------------------//
+
+.u-icon {
+	display: inline-block;
+	fill: currentColor;
+	height: 100%;
+	width: 100%;
+}
+
+.u-icon-xxs {
+	@extend %m-icon-xxs;
+}
+
+.u-icon-xs {
+	@extend %m-icon-xs;
+}
+
+.u-icon-sm {
+	@extend %m-icon-sm;
+}
+
+.u-icon-med {
+	@extend %m-icon-med;
+}
+
+.u-icon-lg {
+	@extend %m-icon-lg;
+}
+
+.u-icon-xl {
+	@extend %m-icon-xl;	
+}
+
+.u-icon-xxl {
+	@extend %m-icon-xxl;	
+}
+
+.u-icon-giant {
+	@extend %m-icon-giant;	
+}	
+
+.u-icon-hero {
+	@extend %m-icon-hero;	
+}

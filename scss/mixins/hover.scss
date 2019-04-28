@@ -1,0 +1,68 @@
+// Hover interface interactions
+
+%m-hover-opacity {
+	@include transition(.06s);
+
+	&:hover {
+		opacity: .8;
+	}
+}
+
+%m-hover-size {
+	&-xs {
+		@include transition(.1s);
+
+		&:hover {
+			transform: scale(1.01);
+		}
+	}
+
+	&-sm {
+		@include transition(.1s);
+
+		&:hover {
+			transform: scale(1.025);
+		}
+	}
+
+	&-md {
+		@include transition(.1s);
+
+		&:hover {
+			transform: scale(1.05);
+		}
+	}
+
+	&-lg {
+		@include transition(.1s);
+
+		&:hover {
+			transform: scale(1.1);
+		}
+	}
+}
+
+%m-hover-card-white {
+	position: relative;
+	z-index: 1;
+
+	&:before {
+		width: 100%;
+		height: 100%;
+		background: $white;
+		border-radius: 5px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		content: "";
+		@include transition(.14s);
+		z-index: -1;
+	}
+	
+	&:hover {
+		&:before {
+			transform: scale(1.05);
+			box-shadow: 0 4px 14px 0 rgba(0,0,0,.1);
+		}
+	}
+}

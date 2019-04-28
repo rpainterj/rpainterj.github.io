@@ -1,0 +1,90 @@
+// --------------------------//
+// color.scss
+// Color vars
+//---------------------------//
+
+
+$black: 							#000;
+$carmine-park: 						#ea4444;
+$carmine-park-hover: 				#c82222;
+$concrete: 							#f2f2f2;
+$gravel: 							#4b4a48;
+$martini: 							#b29d9d;
+$mountain-mist: 					#919191;
+$picton-blue: 						#43b1e6;
+$shark: 							#282828;
+$westar: 							#dad9d5;
+$white: 							#fff;
+$pelorous: 							#3d9ec4;
+$tapa: 								#777;
+$celeste: 							#ccc;
+$required:   						#ea4444;
+$barely-grey:           			#f7f7f7;
+$grey:               				#bfbfbf;
+$light-grey:            			#eee;
+$maya-blue:             			#66c7f5;
+$quill:               				#d8d7d3;
+$malibu:               				#69C1EC;
+$wan-white:							#e1e0dc;
+$mercury:							#e4e4e4;
+$silver-sand:						#c2c2c2;
+$pattens-blue:          			#dbf1fe;
+$sale-green:            			#43A86C;
+$concrete-lite:						#a1a1a1;
+$charcoal:              			#848484;
+$arrow:								#c4c4c4;
+$smoke:                 			#3e3e3e;
+$linen:                 			#fcefef;
+$almost-white:                      #fafafa;
+$almost-grey:                       #F1F2F3;
+$blue-steel:                        #303E4D;
+$magnum:                            #45515f;
+$dirty-ice:                         #bdbdbd;
+$reader:							#444444;
+$credits-navy:						#384254;
+$cool-ice:							#F6FAFC;
+
+/*Site Specific colors*/
+$sessions-bg: 						#171717;
+$premium-dark-gray-text: 			$gravel;
+$premium-light-gray-text: 			$mountain-mist;
+$premium-light-solid-text: 			$shark;
+$premium-gray-background: 			$concrete;
+$premium-text-over-gray-background: $charcoal;
+$picton-blue-hover:					$pelorous;
+$light-blue: 						#33a9e3;
+$picton-gray-disabled: 				$westar;
+$brand-color: 						$picton-blue;
+
+/*Product Colors*/
+$multitracks-color: 				$picton-blue;
+$custommix-color: 					$sale-green;
+$custommix-color-hover: 			#3c9761;
+$patches-color: 					#85c5c5;
+$patches-color-hover: 				#78b1b1;
+$rehearsalmix-color: 				#ef7348;
+$rehearsalmix-color-hover: 			#d76741;
+$song-overview-color: 				$shark;
+$charts-color: 						#6C5EEB;
+$charts-color-hover: 				darken(#6C5EEB, 5%);;
+$sounds-color:						#85c5c5;
+$sounds-color-hover:				darken(#85c5c5, 5%);
+$team-sharing-color: 				$mountain-mist;
+$twitter-brand: 					#00aaef;
+$facebook-brand: 					#3c5999;
+$pco-color: 						#6e9541;
+$accompaniment-color:				#87C5C4;
+$accompaniment-color-dark:			#578383;
+
+/*Category Colors*/
+$category-bass: 					#f4a23a;
+$category-guitar: 					$picton-blue;
+$category-piano: 					$sale-green;
+$category-soprano: 					#fdd650;
+$category-aux: 						#894577;
+
+$error-color: 						$carmine-park;
+$error-color-hover: 				$carmine-park-hover;
+$success-notification-close:		#358656;
+$error-notification-close: 			#bc3636;
+$progress-bar: 						#f5f5f5;
