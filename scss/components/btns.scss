@@ -1,0 +1,54 @@
+@keyframes btn-charts-flash {
+    0% {
+        background: linear-gradient(-20deg, $charts-color 30%, $charts-color-flash 50%, $charts-color 70%); 
+        background-position: 100% 0%;
+        background-size: 400% 400%;
+    }
+
+    50% {
+       background-position: 50% 0%;
+    }
+
+    100% {
+        background: linear-gradient(to right, $charts-color, $charts-color); 
+        background-position: 0% 0%;
+    }
+}
+
+
+// --------------------------//
+// Button
+//---------------------------//
+
+.btn-hero {
+   // don't extend button styles bc of animations
+   @extend %m-text-nile;
+   @include property-transition(transform, .1s);
+   border-radius: 5px;
+   border: none;
+   color: $white;
+   cursor: pointer;
+   display: inline-block;
+   font-family: $franklin;
+   letter-spacing: 0;
+   outline: none;
+   padding: 13px 25px;
+   text-align: center;
+   vertical-align: top;
+   width: 216px;
+
+   &:hover {
+        color: $white;
+        box-shadow: 0 4px 14px 0 rgba(197, 189, 189, 0.1);
+        transform: scale(1.04);
+   }
+
+   &.mod-chart {
+       background: linear-gradient(to right, $charts-color, $charts-color);
+       color: $white;
+
+       &:hover {
+           animation: btn-charts-flash .5s ease-in .1s alternate none;
+       }		
+   }
+}

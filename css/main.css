@@ -594,6 +594,12 @@ a {
   padding: 0;
 }
 
+.btn-hero {
+  font-family: "freight-sans-pro", "Arial", "Helvetica", sans-serif;
+  font-size: 1.133em;
+  font-weight: 500;
+}
+
 .u-text-header {
   font-family: "freight-sans-pro", "Arial", "Helvetica", sans-serif;
   font-size: 1.333em;
@@ -846,6 +852,10 @@ a {
   margin-bottom: 50px;
 }
 
+.u-mar-bottom-100 {
+  margin-bottom: 100px;
+}
+
 .u-mar-top-neg-10 {
   margin-top: -10px;
 }
@@ -879,6 +889,10 @@ a {
 }
 
 .u-mar-top-50 {
+  margin-top: 50px;
+}
+
+.u-mar-top-100 {
   margin-top: 50px;
 }
 
@@ -1939,12 +1953,23 @@ body * {
 }
 
 .link--alpha {
+  transition: all 0.1s ease-in-out;
   display: inline-block;
   text-decoration: underline;
 }
 .link--alpha:hover, .link--alpha:focus {
   transition: all 0.1s ease-in-out;
-  transform: scale(1.07);
+  transform: scale(1.06);
+}
+
+.link--beta {
+  transition: all 0.1s ease-in-out;
+  display: block;
+  margin: 100px 0;
+}
+.link--beta:hover, .link--beta:focus {
+  transition: all 0.1s ease-in-out;
+  transform: scale(1.01);
 }
 
 .bio {
@@ -2014,6 +2039,49 @@ body * {
 }
 .header--nav--link.is-active {
   border-top: 3px solid #5c7d99;
+  pointer-events: none;
+}
+
+@keyframes btn-charts-flash {
+  0% {
+    background: linear-gradient(-20deg, #6C5EEB 30%, #7467ec 50%, #6C5EEB 70%);
+    background-position: 100% 0%;
+    background-size: 400% 400%;
+  }
+  50% {
+    background-position: 50% 0%;
+  }
+  100% {
+    background: linear-gradient(to right, #6C5EEB, #6C5EEB);
+    background-position: 0% 0%;
+  }
+}
+.btn-hero {
+  transition: transform 0.1s ease-in-out;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Libre Franklin", sans-serif;
+  letter-spacing: 0;
+  outline: none;
+  padding: 13px 25px;
+  text-align: center;
+  vertical-align: top;
+  width: 216px;
+}
+.btn-hero:hover {
+  color: #fff;
+  box-shadow: 0 4px 14px 0 rgba(197, 189, 189, 0.1);
+  transform: scale(1.04);
+}
+.btn-hero.mod-chart {
+  background: linear-gradient(to right, #6C5EEB, #6C5EEB);
+  color: #fff;
+}
+.btn-hero.mod-chart:hover {
+  animation: btn-charts-flash 0.5s ease-in 0.1s alternate none;
 }
 
 .page {

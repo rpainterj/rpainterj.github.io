@@ -24,13 +24,25 @@ body * {
 }
 
 .link--alpha {
+    @include transition(.1s);
     display: inline-block;
     text-decoration: underline;
 
     &:hover, &:focus {
         @include transition(.1s);
-        transform: scale(1.07);
+        transform: scale(1.06);
     }
+}
+
+.link--beta {
+    @include transition(.1s);
+    display: block;
+    margin: 100px 0;
+
+    &:hover, &:focus {
+        @include transition(.1s);
+        transform: scale(1.01);
+    }   
 }
 
 .bio {
