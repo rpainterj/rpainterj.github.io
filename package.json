@@ -11,8 +11,9 @@
 		"npm-run-all": "^4.1.5",
 		"onchange": "^5.2.0",
 		"postcss-cli": "^6.1.2",
-		"sass": "^1.18.0",
-		"shelljs": "^0.8.3"
+		"sass": "^1.28.0",
+		"shelljs": "^0.8.3",
+		"svg-sprite": "^1.5.0"
 	},
 	"watch": {
 		"compile-sass": {
@@ -28,13 +29,12 @@
 		"sass": "node ./package_scripts/sass.js",
 		"min-css": "node ./package_scripts/min-css.js",
 		"min-js": "node ./package_scripts/min-js.js",
-		"svg": "node ./package_scripts/svg.js",
 		"postCSS": "node ./package_scripts/postcss.js",
 		"clean-js": "node ./package_scripts/clean-js.js",
 		"watch-sass": "onchange \"./scss/**/*.scss\" -i -v -- npm run site-sass",
 		"site-sass": "node ./package_scripts/clean-sass.js && npm run sass && npm run postCSS",
 		"compile-sass": "npm run site-sass && npm run min-css",
-		"build": "run-p svg compile-sass compile-js",
+		"build": "run-p compile-sass",
 		"default": "npm install && npm run build"
 	}
 }
