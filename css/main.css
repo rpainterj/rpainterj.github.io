@@ -1890,6 +1890,37 @@ body * {
     font-size: 1.7em;
   }
 }
+.text--beta.has-border {
+  border-top: 4px dashed #ccc;
+  padding-top: 30px;
+  position: relative;
+}
+.text--beta.has-border:after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 10vw;
+  background: #aaa;
+  transform: skewX(-20deg);
+  top: 0;
+  left: -60%;
+  z-index: -1;
+  box-shadow: 5px 5px #ccc;
+}
+.text--beta.has-border:before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 10vw;
+  background: #aaa;
+  transform: skewX(-20deg);
+  top: 0;
+  left: 60%;
+  z-index: -1;
+  box-shadow: 5px 5px #ccc;
+}
 
 .link--alpha {
   transition: all 0.1s ease-in-out;
