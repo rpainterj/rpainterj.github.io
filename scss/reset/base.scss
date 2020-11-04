@@ -3,6 +3,23 @@
 // Sitewide Styles
 //---------------------------//
 
+// @keyframes btn-primary-flash {
+//     0% {
+//         background: linear-gradient(-20deg, #aaa 30%, #eee 50%, #aaa 70%); 
+//         background-position: 100% 0%;
+//         background-size: 400% 400%;
+//     }
+ 
+//     50% {
+//        background-position: 50% 0%;
+//     }
+ 
+//     100% {
+//         background: linear-gradient(to right, #aaa, #aaa); 
+//         background-position: 0% 0%;
+//     }
+// }
+
 body * {
     font-family: $franklin;
 }
@@ -42,6 +59,7 @@ body * {
         }
 
         &:before {
+           // animation: btn-primary-flash .5s ease-in .1s alternate none;
             content: "";
             display: block;
             position: absolute;
@@ -53,7 +71,7 @@ body * {
             right: -60%;
             z-index: -1;
             box-shadow: 5px 5px #ccc;   
-            opacity: .4;    
+            opacity: .4;   
         }
     }
 }

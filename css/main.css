@@ -1917,9 +1917,10 @@ body * {
   background: #aaa;
   transform: skewX(-20deg);
   top: 0;
-  left: 60%;
+  right: -60%;
   z-index: -1;
   box-shadow: 5px 5px #ccc;
+  opacity: 0.4;
 }
 
 .link--alpha {
